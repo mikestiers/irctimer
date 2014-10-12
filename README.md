@@ -1,0 +1,4 @@
+irctimer
+========
+
+Weechat IRC Timer
