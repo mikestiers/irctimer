@@ -12,7 +12,6 @@
 #   bar now displays friendly timer in days (write_value_friendly)
 #
 # Todo - high priority:
-#  make bar item appear automatically (/set weechat.bar.status.items irctimer)
 #  timer still counts if you go into standby
 #
 # Todo - low priority:
@@ -42,9 +41,9 @@ import weechat
 
 SCRIPT_NAME    = "IRC_Timer"
 SCRIPT_AUTHOR  = "Mike Stiers <mike.stiers@gmail.com>"
-SCRIPT_VERSION = "0.6"
+SCRIPT_VERSION = "0.7"
 SCRIPT_LICENSE = "GPL3"
-SCRIPT_DESC    = "Script to display how much of your life has been wasted on IRC"
+SCRIPT_DESC    = "Script to display how much of your life has been wasted on IRC - /set weechat.bar.status.items irctimer [time],[buffer_count],[buffer_plugin],buffer_number+:+buffer_name+{buffer_nicklist_count}+buffer_filter,[lag],[hotlist],completion,scroll,irctimer"
 
 filename = os.getenv("HOME")+'/irctimer.txt'
 write_value_paused = str
